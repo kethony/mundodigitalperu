@@ -14,3 +14,4 @@ IMPORTANTE:
 - El subdominio .netlify.app puede ser gratis.
 - Un dominio propio .com/.pe normalmente se paga.
 - Conserva la carpeta assets junto al index.html.
+Prueba de Preview
