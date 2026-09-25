@@ -2521,13 +2521,23 @@
       floatWa.href = waUrl(key);
     }
   }
+  function pauseAllVideos(reset){
+  document.querySelectorAll("video").forEach(function(video){
+    try{
+      video.pause();
+      if(reset){ video.currentTime = 0; }
+    }catch(e){}
+  });
+}
   function showMain(){
+    pauseAllVideos(true);
     hideAllDetails();
     mainView.style.display = "";
     document.title = "Mundo Digital | Productos digitales";
     setFloatMsg("default");
   }
   function showDetail(key){
+    pauseAllVideos(true);
     mainView.style.display = "none";
     hideAllDetails();
     detailViews[key].el.style.display = "";
