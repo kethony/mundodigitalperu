@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mundo Digital | Productos digitales</title>
-<meta name="description" content="Descubre productos digitales para emprender, aprender, organizarte y potenciar tus proyectos. Revisa precios, detalles y medios de pago.">
+<title>Mundo Digital Perú | Recursos para aprender y emprender</title>
+<meta name="description" content="Mundo Digital Perú: recursos digitales para estudiar, organizarte y emprender. Revisa productos, precios, detalles, medios de pago y atención por WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -80,6 +80,9 @@
     display:flex; align-items:center; justify-content:space-between; gap:20px;
   }
   .brand{display:flex; align-items:center; gap:10px; font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:19px;}
+  .brand-logo{width:36px;height:36px;display:block;flex:none;filter:drop-shadow(0 6px 14px rgba(61,123,255,.28));}
+  .brand-country{display:block;font-family:'Manrope',system-ui,sans-serif;font-size:9px;letter-spacing:.18em;color:#ef3340;font-weight:800;line-height:1;margin-top:2px;}
+
   .brand-mark{
     width:34px; height:34px; border-radius:9px; flex:none;
     background:linear-gradient(155deg,#4d8bff,#1c3f8f);
@@ -555,14 +558,119 @@
     .inst-grid{grid-template-columns:1fr;}
     .price-hero-banner{flex-direction:column; align-items:flex-start;}
   }
+
+  /* ---------- MEGA PACK DIGITAL 2026 DETAIL ---------- */
+  .mega-stats{display:grid; grid-template-columns:repeat(5,1fr); gap:14px;}
+  .mega-stat{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-m); padding:24px 16px; text-align:center; transition:transform .2s, border-color .2s;}
+  .mega-stat:hover{transform:translateY(-3px); border-color:var(--blue);}
+  .mega-stat b{display:block; font-family:'Space Grotesk',sans-serif; font-size:24px; color:var(--blue); margin-bottom:6px;}
+  .mega-stat span{font-size:12px; color:var(--text-2);}
+
+  .video-card{
+    display:flex; align-items:center; gap:26px; flex-wrap:wrap;
+    background:linear-gradient(120deg, rgba(61,123,255,0.14), rgba(11,18,32,0.3));
+    border:1px solid rgba(61,123,255,0.3); border-radius:var(--radius-l);
+    padding:36px 34px;
+  }
+  .video-play{
+    flex:none; width:80px; height:80px; border-radius:50%;
+    background:linear-gradient(155deg,#4d8bff,#2a5ce0); display:flex; align-items:center; justify-content:center;
+    font-size:28px; box-shadow:0 14px 30px -10px rgba(61,123,255,0.8);
+  }
+  .video-card h3{font-size:19px; margin-bottom:6px;}
+  .video-card p{color:var(--text-2); font-size:13.8px; max-width:420px;}
+  .video-card .btn{margin-top:14px;}
+
+  .content-card{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-m); padding:26px 24px; display:flex; flex-direction:column; gap:14px;}
+  .content-card .card-icon{font-size:26px; width:auto; height:auto; background:none; border:none; justify-content:flex-start;}
+  .content-card h3{font-size:17.5px;}
+  .content-card .desc{font-size:13.6px; color:var(--text-2);}
+  .tag-cloud{display:flex; flex-wrap:wrap; gap:7px;}
+  .tag-cloud span{font-size:11.8px; color:var(--text-1); background:var(--bg-0); border:1px solid var(--line); padding:5px 10px; border-radius:8px;}
+  .content-card .more{font-size:12.5px; color:var(--blue); font-weight:700;}
+  .content-card .note{font-size:11.8px; color:var(--text-2); font-style:italic;}
+
+  .value-row{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:24px;}
+  .value-pill{
+    display:flex; align-items:center; gap:8px; background:var(--panel); border:1px solid var(--line);
+    border-radius:999px; padding:10px 16px; font-size:13.3px; font-weight:600;
+  }
+
+  .grow-box{
+    text-align:center; padding:44px 30px; border-radius:var(--radius-l);
+    background:var(--bg-1); border:1px solid var(--line);
+  }
+  .grow-box p{color:var(--text-1); font-size:15px; max-width:520px; margin:10px auto 22px;}
+  .grow-badges{display:flex; gap:10px; justify-content:center; flex-wrap:wrap;}
+  .grow-badges span{font-size:12.5px; font-weight:700; color:var(--blue); background:rgba(61,123,255,0.12); border:1px solid rgba(61,123,255,0.3); padding:8px 14px; border-radius:999px;}
+
+  .price-mega{
+    text-align:center; max-width:440px; margin:0 auto; padding:44px 36px; border-radius:var(--radius-l);
+    background:linear-gradient(160deg, rgba(61,123,255,0.18), rgba(11,18,32,0.4));
+    border:1px solid rgba(61,123,255,0.34);
+  }
+  .price-mega .now{font-size:52px;}
+  .price-mega .bullet-list{text-align:left; margin:22px 0 26px;}
+  .price-mega .btn{width:100%;}
+
+  @media (max-width:980px){
+    .mega-stats{grid-template-columns:repeat(3,1fr);}
+  }
+  @media (max-width:640px){
+    .mega-stats{grid-template-columns:repeat(2,1fr);}
+    .video-card{flex-direction:column; text-align:center;}
+    .video-card p{max-width:none;}
+  }
+
+  /* ---------- KIT PLANIFICA TU VIDA DETAIL ---------- */
+  .pain-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin-top:26px;}
+  .pain-item{display:flex; gap:12px; align-items:flex-start; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px; font-size:14px; color:var(--text-1);}
+  .pain-item .ic{font-size:19px; flex:none;}
+  .pain-note{text-align:center; color:var(--text-1); font-size:14.5px; max-width:560px; margin:28px auto 0;}
+
+  .preview-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:14px;}
+  .preview-card{
+    aspect-ratio:3/4; border-radius:var(--radius-m); border:1px dashed var(--line-strong);
+    background:linear-gradient(160deg, rgba(61,123,255,0.08), rgba(255,255,255,0.02));
+    display:flex; align-items:center; justify-content:center; flex-direction:column; gap:8px;
+    color:var(--text-2); font-size:12.5px; font-weight:700; text-align:center; padding:10px;
+  }
+  .preview-card .ic{font-size:22px;}
+
+  @media (max-width:980px){
+    .pain-grid{grid-template-columns:1fr;}
+    .preview-grid{grid-template-columns:repeat(3,1fr);}
+  }
+  @media (max-width:640px){
+    .preview-grid{grid-template-columns:repeat(2,1fr);}
+  }
 </style>
+
+<!-- SEO y vista previa al compartir -->
+<link rel="canonical" href="https://mundodigitalperu.netlify.app/">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="theme-color" content="#060a12">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_PE">
+<meta property="og:site_name" content="Mundo Digital Perú">
+<meta property="og:title" content="Mundo Digital Perú | Aprende y emprende">
+<meta property="og:description" content="Recursos digitales para estudiar, organizarte y emprender. Compra y consulta directamente por WhatsApp.">
+<meta property="og:url" content="https://mundodigitalperu.netlify.app/">
+<meta property="og:image" content="https://mundodigitalperu.netlify.app/assets/og-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mundo Digital Perú | Aprende y emprende">
+<meta name="twitter:description" content="Recursos digitales para estudiar, organizarte y emprender.">
+<meta name="twitter:image" content="https://mundodigitalperu.netlify.app/assets/og-preview.png">
+
 </head>
 <body>
 
 <!-- ================= HEADER ================= -->
 <header>
   <nav class="nav">
-    <a href="javascript:void(0)" onclick="goHome()" class="brand"><span class="brand-mark">M</span>Mundo Digital</a>
+    <a href="javascript:void(0)" onclick="goHome()" class="brand"><img class="brand-logo" src="assets/logo-mark.svg" alt="Mundo Digital Perú"><span>Mundo Digital <small class="brand-country">PERÚ</small></span></a>
     <ul class="navlinks">
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#productos">Productos</a></li>
@@ -622,6 +730,24 @@
   </div>
 </section>
 
+<!-- ================= COMPRA INFORMADA ================= -->
+<section class="doubt" aria-label="Compra informada" style="padding-top:4px;">
+  <div class="wrap">
+    <div class="doubt-box" style="align-items:flex-start;">
+      <div style="max-width:650px;">
+        <span class="eyebrow" style="margin-bottom:14px;">MUNDO DIGITAL PERÚ</span>
+        <h3>Compra con claridad antes de pagar</h3>
+        <p style="margin-top:8px;">Revisa la ficha de cada producto y consulta por WhatsApp si necesitas confirmar contenido, formato, compatibilidad o forma de entrega.</p>
+      </div>
+      <div class="quick-strip" style="margin-top:0;max-width:420px;">
+        <span class="quick-pill">✓ Ficha detallada</span>
+        <span class="quick-pill">✓ Atención por WhatsApp</span>
+        <span class="quick-pill">✓ Entrega digital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CATALOGO ================= -->
 <section class="catalog" id="productos">
   <div class="wrap">
@@ -654,7 +780,7 @@
         <h3>Mega Pack Digital</h3>
         <p class="desc">Miles de cursos y programas digitales</p>
         <div class="price-row"><span class="price">S/20</span></div>
-        <button class="btn btn-primary" onclick="openModal('megapack')">Ver detalles</button>
+        <button class="btn btn-primary" onclick="goToMegapack()">Ver detalles</button>
       </div>
 
       <div class="card" data-cat="redes">
@@ -687,6 +813,14 @@
         <p class="desc">Organiza tus hábitos y mide tu progreso</p>
         <div class="price-row"><span class="price">S/5</span></div>
         <button class="btn btn-primary" onclick="openModal('habitos')">Ver detalles</button>
+      </div>
+
+      <div class="card" data-cat="productividad">
+        <div class="card-top"><div class="card-icon">📋</div></div>
+        <h3>Kit Planifica tu Vida</h3>
+        <p class="desc">Organiza tus actividades, objetivos, hábitos y finanzas en un solo lugar</p>
+        <div class="price-row"><span class="price">S/10</span><span style="font-size:12.5px; color:var(--text-2); text-decoration:line-through;">S/50</span></div>
+        <button class="btn btn-primary" onclick="goToKit()">Ver producto</button>
       </div>
 
       <div class="card card-discount">
@@ -1495,11 +1629,672 @@
 
 </main>
 
+<!-- ================= DETALLE DE PRODUCTO: MEGA PACK DIGITAL 2026 ================= -->
+<main id="detailView-megapack" class="detail-view" style="display:none;">
+
+  <section class="detail-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="javascript:void(0)" onclick="goHome()">Mundo Digital</a>
+        <span class="sep">/</span>
+        <span>Producto</span>
+        <span class="sep">/</span>
+        <span class="current">Mega Pack Digital 2026</span>
+      </div>
+
+      <span class="eyebrow">🚀 CONTENIDO DIGITAL PREMIUM · 2026</span>
+      <h1 style="max-width:680px;">Mega Pack Digital <span style="color:var(--blue);">2026</span></h1>
+      <p class="sub" style="max-width:600px; font-weight:700; color:var(--text-0);">Todo el contenido que necesitas · en un solo lugar</p>
+      <p class="sub" style="max-width:560px;">Miles de recursos digitales reunidos en un solo pack para aprender, crear, trabajar y entretenerte.</p>
+
+      <div class="price-hero-banner">
+        <div>
+          <div class="big">S/20</div>
+          <div class="note">Pago único · Acceso de por vida</div>
+        </div>
+        <a class="btn btn-primary wa-link" data-msg="megapack" href="#" target="_blank" rel="noopener">🔥 Quiero mi pack ahora</a>
+      </div>
+
+      <ul class="bullet-list" style="margin-top:24px;">
+        <li>Pago único</li>
+        <li>Acceso de por vida</li>
+        <li>Actualizaciones constantes</li>
+        <li>Compatible con PC y celular</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <section style="padding:56px 0 10px;">
+    <div class="wrap">
+      <div class="mega-stats">
+        <div class="mega-stat"><b>Miles</b><span>Cursos Premium</span></div>
+        <div class="mega-stat"><b>Miles</b><span>Libros &amp; Cómics</span></div>
+        <div class="mega-stat"><b>Miles</b><span>Música &amp; FX</span></div>
+        <div class="mega-stat"><b>Cientos</b><span>Juegos PC &amp; Android</span></div>
+        <div class="mega-stat"><b>Miles</b><span>Diseños &amp; Recursos</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO DEMOSTRATIVO -->
+  <section id="video-mega" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">VIDEO</span>
+        <h2>Mira el Mega Pack en acción</h2>
+        <p>¿Quieres saber cómo es el contenido antes de ingresar? Mira nuestro video demostrativo y descubre cómo está organizado el Mega Pack.</p>
+      </div>
+      <div class="video-wrap" style="max-width:860px; margin:0 auto;">
+        <video controls playsinline preload="metadata">
+          <source src="assets/mega-pack-digital-2026.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO INCLUIDO -->
+  <section id="contenido-mega" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">CONTENIDO</span>
+        <h2>Todo lo que recibes</h2>
+        <p>Explora las principales categorías incluidas dentro del Mega Pack Digital 2026.</p>
+      </div>
+      <div class="grid-products" style="grid-template-columns:repeat(3,1fr);">
+
+        <div class="content-card">
+          <div class="card-icon">📚</div>
+          <h3>Cursos Premium</h3>
+          <p class="desc">Miles de recursos para aprender nuevas habilidades digitales.</p>
+          <div class="tag-cloud">
+            <span>Programación y desarrollo web</span><span>Diseño gráfico profesional</span><span>Edición de video y fotografía</span><span>Marketing digital y redes sociales</span><span>IA y automatización</span><span>Excel avanzado</span><span>Trading y finanzas</span><span>Producción musical</span><span>TikTok</span><span>YouTube</span><span>Idiomas</span><span>Desarrollo personal</span>
+          </div>
+          <p class="more">Y mucho más.</p>
+        </div>
+
+        <div class="content-card">
+          <div class="card-icon">📘</div>
+          <h3>Libros &amp; Cómics</h3>
+          <p class="desc">Una amplia colección de lectura digital en distintos géneros y temáticas.</p>
+          <div class="tag-cloud">
+            <span>Negocios</span><span>Emprendimiento</span><span>Finanzas</span><span>Psicología</span><span>Desarrollo personal</span><span>Tecnología</span><span>Programación</span><span>Marketing</span><span>Ventas</span><span>Publicidad</span><span>Novelas</span><span>Mangas</span><span>Literatura</span><span>Material académico</span><span>Productividad</span><span>Hábitos</span><span>Aprendizaje</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="card-icon">🎶</div>
+          <h3>Música &amp; Efectos</h3>
+          <p class="desc">Pistas, efectos y recursos de audio para distintos estilos y usos.</p>
+          <div class="tag-cloud">
+            <span>Salsa</span><span>Cumbia peruana</span><span>Huayno</span><span>Reggaetón</span><span>Bachata</span><span>Trap</span><span>Drill</span><span>Electrónica</span><span>Rock</span><span>Pop</span><span>Hip Hop</span><span>Música instrumental</span><span>Música ambiental</span><span>Audios virales</span><span>Efectos de sonido</span><span>Contenido para TikTok</span><span>Contenido para YouTube</span><span>Recursos para DJs</span><span>Recursos para eventos</span><span>Recursos para streaming</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="card-icon">🎮</div>
+          <h3>Juegos PC &amp; Android</h3>
+          <p class="desc">Títulos de distintos géneros para PC y dispositivos Android.</p>
+          <div class="tag-cloud">
+            <span>Acción</span><span>Aventura</span><span>Carreras</span><span>Estrategia</span><span>Simulación</span><span>Deportes</span><span>Terror</span><span>Supervivencia</span><span>RPG</span><span>Clásicos</span><span>Títulos modernos</span><span>Offline</span><span>Online</span>
+          </div>
+          <p class="note">La compatibilidad puede variar según el juego, versión y dispositivo.</p>
+        </div>
+
+        <div class="content-card">
+          <div class="card-icon">🎨</div>
+          <h3>Diseños &amp; Plantillas</h3>
+          <p class="desc">Recursos gráficos listos para personalizar y usar.</p>
+          <div class="tag-cloud">
+            <span>Flyers</span><span>Banners</span><span>Plantillas para Instagram</span><span>Plantillas para Facebook</span><span>Historias</span><span>Reels editables</span><span>Logos</span><span>Mockups</span><span>Diseños para impresión</span><span>Publicidad</span><span>Contenido para redes sociales</span><span>Recursos gráficos para negocios</span>
+          </div>
+        </div>
+
+        <div class="content-card">
+          <div class="card-icon">🖥️</div>
+          <h3>Software &amp; Apps</h3>
+          <p class="desc">Programas y aplicaciones útiles para distintas tareas digitales.</p>
+          <div class="tag-cloud">
+            <span>Diseño gráfico</span><span>Edición de video</span><span>Edición fotográfica</span><span>Productividad</span><span>Apps útiles</span><span>Recursos para streaming</span><span>Programas de oficina</span><span>Utilidades digitales</span>
+          </div>
+          <p class="note">No se garantiza que el software incluido sea oficial, original o se encuentre licenciado/activado.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section id="beneficios-mega" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">MÁS QUE UN PACK</span>
+        <h2>Beneficios</h2>
+      </div>
+      <div class="trust-grid" style="grid-template-columns:repeat(5,1fr);">
+        <div class="trust-card"><div class="ic">♾️</div><h4>Acceso de por vida</h4><p>Una vez adquirido, el acceso no tiene una fecha de vencimiento.</p></div>
+        <div class="trust-card"><div class="ic">🔄</div><h4>Actualizaciones constantes</h4><p>El contenido se amplía y actualiza constantemente.</p></div>
+        <div class="trust-card"><div class="ic">🎁</div><h4>Contenido adicional</h4><p>Recursos adicionales y nuevos contenidos.</p></div>
+        <div class="trust-card"><div class="ic">📱</div><h4>Multidispositivo</h4><p>Contenido para diferentes dispositivos, incluyendo PC, laptop y celular.</p></div>
+        <div class="trust-card"><div class="ic">💬</div><h4>Soporte directo</h4><p>Soporte para ayudarte con el acceso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDEAL PARA TI SI -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">¿PARA QUIÉN ES?</span>
+        <h2>Ideal para ti si...</h2>
+      </div>
+      <div class="grid-products" style="grid-template-columns:repeat(3,1fr);">
+        <div class="card"><div class="card-icon">👨‍💻</div><h3>Eres estudiante</h3><p class="desc">Aprende nuevas habilidades y encuentra recursos educativos.</p></div>
+        <div class="card"><div class="card-icon">🚀</div><h3>Tienes un emprendimiento</h3><p class="desc">Accede a recursos para tus proyectos y negocios.</p></div>
+        <div class="card"><div class="card-icon">🎨</div><h3>Eres diseñador o creador</h3><p class="desc">Encuentra diseños, plantillas y recursos gráficos.</p></div>
+        <div class="card"><div class="card-icon">🎧</div><h3>Eres DJ o productor</h3><p class="desc">Accede a música, efectos y recursos audiovisuales.</p></div>
+        <div class="card"><div class="card-icon">💼</div><h3>Eres freelancer</h3><p class="desc">Reúne herramientas y recursos digitales en un solo lugar.</p></div>
+        <div class="card"><div class="card-icon">📈</div><h3>Quieres aprender</h3><p class="desc">Explora cursos, herramientas, tecnología y diferentes áreas digitales.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BONOS -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">🎁 BONOS INCLUIDOS</span>
+        <h2>Además, recibes</h2>
+      </div>
+      <ul class="checklist">
+        <li>Acceso a grupo privado</li>
+        <li>Actualizaciones constantes</li>
+        <li>Nuevos recursos digitales</li>
+        <li>Contenido extra</li>
+        <li>Soporte directo</li>
+        <li>Acceso de por vida</li>
+        <li>Bonos sorpresa adicionales</li>
+        <li>Compatibilidad con PC y celular</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TODO EN UN SOLO LUGAR -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head" style="max-width:640px;">
+        <span class="eyebrow">VALOR</span>
+        <h2>Todo en un solo lugar</h2>
+        <p>En lugar de buscar diferentes recursos por separado, el usuario encuentra dentro del Mega Pack diferentes categorías.</p>
+      </div>
+      <div class="value-row">
+        <span class="value-pill">📚 Cursos</span>
+        <span class="value-pill">📘 Libros</span>
+        <span class="value-pill">🎶 Música</span>
+        <span class="value-pill">🎮 Juegos</span>
+        <span class="value-pill">🎨 Diseños</span>
+        <span class="value-pill">🖥️ Software</span>
+        <span class="value-pill">📱 Apps</span>
+        <span class="value-pill">📂 Plantillas</span>
+        <span class="value-pill">🎓 Tutoriales</span>
+        <span class="value-pill">🚀 Mucho más</span>
+      </div>
+      <p style="text-align:center; color:var(--text-1); font-size:14.5px; margin-top:24px;">Una sola compra para acceder a una amplia colección de recursos digitales.</p>
+    </div>
+  </section>
+
+  <!-- EL PACK SIGUE CRECIENDO -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="grow-box">
+        <h2>El pack sigue creciendo</h2>
+        <p>Tu acceso no termina después de comprar. El Mega Pack recibe nuevos recursos y actualizaciones constantemente.</p>
+        <div class="grow-badges">
+          <span>Acceso de por vida</span>
+          <span>Nuevos recursos</span>
+          <span>Actualizaciones constantes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIO -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center; margin:0 auto 30px;">
+        <span class="eyebrow">PRECIO</span>
+        <h2>Todo esto por solo</h2>
+      </div>
+      <div class="price-mega">
+        <div class="price-compare" style="justify-content:center;"><span class="now">S/20</span></div>
+        <p class="note">Pago único</p>
+        <ul class="bullet-list">
+          <li>Sin mensualidades</li>
+          <li>Acceso de por vida</li>
+          <li>Actualizaciones constantes</li>
+          <li>Nuevos recursos</li>
+          <li>Soporte directo</li>
+        </ul>
+        <a class="btn btn-primary wa-link" data-msg="megapack" href="#" target="_blank" rel="noopener">🔥 Obtener mi pack ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq-mega" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">¿Cuánto cuesta?<span class="plus"></span></button>
+          <div class="faq-a"><p>El Mega Pack Digital 2026 tiene un precio de S/20.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Es un pago mensual?<span class="plus"></span></button>
+          <div class="faq-a"><p>No. Es un pago único.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Cuánto tiempo tengo acceso?<span class="plus"></span></button>
+          <div class="faq-a"><p>El acceso es de por vida.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿El contenido se actualiza?<span class="plus"></span></button>
+          <div class="faq-a"><p>Sí. El pack recibe nuevos recursos y actualizaciones constantemente.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Puedo acceder desde mi celular?<span class="plus"></span></button>
+          <div class="faq-a"><p>Sí. Incluye contenido para celular/Android, además de recursos para PC y laptop. La compatibilidad puede variar según el recurso.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Qué contenido incluye?<span class="plus"></span></button>
+          <div class="faq-a"><p>Incluye cursos, libros, música, efectos, juegos, diseños, plantillas, software, apps, tutoriales y mucho más.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Cómo puedo comprarlo?<span class="plus"></span></button>
+          <div class="faq-a"><p>Haz clic en cualquiera de los botones de compra y serás dirigido a WhatsApp para solicitar el acceso.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Hay soporte?<span class="plus"></span></button>
+          <div class="faq-a"><p>Sí, se ofrece soporte directo.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" style="padding:20px 0 90px;">
+    <div class="wrap">
+      <div class="cta-box">
+        <h2>Todo lo que necesitas, en un solo pack.</h2>
+        <p>Miles de recursos digitales. Un solo acceso. Pago único y acceso de por vida.</p>
+        <div class="price-compare" style="justify-content:center; margin-bottom:20px;"><span class="now">S/20</span></div>
+        <a class="btn btn-primary wa-link" data-msg="megapack" href="#" target="_blank" rel="noopener">🚀 Quiero mi Mega Pack</a>
+        <p class="note" style="margin-top:16px;">Pago único · Acceso de por vida · Actualizaciones constantes</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= DETALLE DE PRODUCTO: KIT PLANIFICA TU VIDA ================= -->
+<main id="detailView-kit" class="detail-view" style="display:none;">
+
+  <section class="detail-hero">
+    <div class="wrap">
+      <div class="breadcrumb">
+        <a href="javascript:void(0)" onclick="goHome()">Mundo Digital</a>
+        <span class="sep">/</span>
+        <span>Producto</span>
+        <span class="sep">/</span>
+        <span class="current">Kit Planifica tu Vida</span>
+      </div>
+
+      <span class="eyebrow">📋 KIT DIGITAL · PLANIFICACIÓN PERSONAL</span>
+      <h1 style="max-width:680px;">Kit Planifica tu Vida</h1>
+      <p class="sub" style="max-width:600px; font-weight:700; color:var(--text-0);">Organiza tu vida, tus metas y tus finanzas en un solo lugar.</p>
+      <p class="sub" style="max-width:600px;">Una colección de herramientas digitales pensadas para ayudarte a organizar tus actividades, planificar tus objetivos, controlar tus hábitos y gestionar mejor tus finanzas.</p>
+
+      <div class="price-hero-banner">
+        <div>
+          <div class="price-compare"><span class="now">S/10</span><span class="old">S/50</span></div>
+          <div class="note">Pago único · Producto digital</div>
+        </div>
+        <a class="btn btn-primary" href="#comprar">🔥 Quiero mi kit por S/10</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section style="padding:60px 0 10px;">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center; margin:0 auto 10px;">
+        <span class="eyebrow">¿TE PASA ESTO?</span>
+        <h2>¿Sientes que necesitas organizarte mejor?</h2>
+      </div>
+      <div class="pain-grid">
+        <div class="pain-item"><span class="ic">📋</span><span>Tienes muchas cosas pendientes.</span></div>
+        <div class="pain-item"><span class="ic">🎯</span><span>Empiezas metas pero te cuesta mantenerlas.</span></div>
+        <div class="pain-item"><span class="ic">🔄</span><span>Te cuesta mantener tus hábitos.</span></div>
+        <div class="pain-item"><span class="ic">💰</span><span>Quieres llevar un mejor control de tus finanzas.</span></div>
+        <div class="pain-item"><span class="ic">📅</span><span>Sientes que tus días pasan sin una planificación clara.</span></div>
+        <div class="pain-item"><span class="ic">🧠</span><span>Tienes muchas ideas pero no sabes cómo organizarlas.</span></div>
+      </div>
+      <p class="pain-note">Con un sistema sencillo puedes empezar a organizar diferentes áreas de tu vida y tener mayor claridad sobre lo que quieres lograr.</p>
+      <div style="text-align:center; margin-top:22px;"><a class="btn btn-ghost" href="#comprar">Quiero organizar mi vida</a></div>
+    </div>
+  </section>
+
+  <!-- PRESENTACIÓN -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">EL KIT</span>
+        <h2>Conoce el Kit Planifica tu Vida</h2>
+        <p>Una colección de herramientas digitales diseñadas para ayudarte a organizar tus actividades, objetivos, hábitos y finanzas desde un mismo lugar.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-card"><div class="ic">📅</div><h4>Actividades</h4><p>Organiza tus tareas y actividades diarias.</p></div>
+        <div class="trust-card"><div class="ic">🎯</div><h4>Objetivos</h4><p>Planifica tus metas y realiza seguimiento de tus avances.</p></div>
+        <div class="trust-card"><div class="ic">🔄</div><h4>Hábitos</h4><p>Trabaja en tus hábitos y observa tu progreso.</p></div>
+        <div class="trust-card"><div class="ic">💰</div><h4>Finanzas</h4><p>Lleva un mejor control y seguimiento de tus finanzas personales.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TODO LO QUE PUEDES ORGANIZAR -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">POSIBILIDADES</span>
+        <h2>Todo lo que puedes organizar</h2>
+      </div>
+      <ul class="checklist">
+        <li>Organizar tus actividades</li>
+        <li>Planificar tus objetivos</li>
+        <li>Llevar seguimiento de tus hábitos</li>
+        <li>Organizar tus finanzas</li>
+        <li>Tener tus planes en un solo lugar</li>
+        <li>Dar seguimiento a tus avances</li>
+        <li>Visualizar tus prioridades</li>
+        <li>Mejorar tu planificación diaria</li>
+        <li>Tener mayor claridad sobre tus metas</li>
+        <li>Crear una rutina más organizada</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VIDEO DEMOSTRATIVO -->
+  <section id="video-kit" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">VIDEO</span>
+        <h2>🎥 Ve el kit por dentro</h2>
+        <p>Descubre cómo funciona el Kit Planifica Tu Vida y conoce las herramientas que recibirás.</p>
+      </div>
+      <div class="video-card">
+        <div class="video-play">▶️</div>
+        <div>
+          <h3>Video demostrativo</h3>
+          <p>Mira cómo es el Kit Planifica Tu Vida por dentro.</p>
+          <a class="btn btn-primary" href="https://drive.google.com/file/d/1OtOqV2zX1KQxwIdk_AZvzNFF3sp5jAI4/view?usp=drivesdk" target="_blank" rel="noopener">▶ Ver el kit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">VISTA PREVIA</span>
+        <h2>Mira lo que recibes</h2>
+        <p>Explora visualmente las diferentes herramientas y elementos que forman parte del kit.</p>
+      </div>
+      <div class="preview-grid">
+        <div class="preview-card"><span class="ic">📝</span>Planificación</div>
+        <div class="preview-card"><span class="ic">🎯</span>Objetivos</div>
+        <div class="preview-card"><span class="ic">🔄</span>Hábitos</div>
+        <div class="preview-card"><span class="ic">💰</span>Finanzas</div>
+        <div class="preview-card"><span class="ic">📅</span>Actividades</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENIDO DEL KIT -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">CONTENIDO</span>
+        <h2>Todo lo que necesitas para empezar a organizarte</h2>
+        <p>Herramientas y plantillas digitales pensadas para ayudarte a organizar mejor tus objetivos, hábitos, actividades y finanzas.</p>
+      </div>
+      <div class="grid-products" style="grid-template-columns:repeat(3,1fr);">
+        <div class="content-card"><div class="card-icon">📅</div><h3>Planificador de actividades</h3><p class="desc">Organiza tus tareas y actividades para tener una visión más clara de lo que necesitas hacer.</p></div>
+        <div class="content-card"><div class="card-icon">🎯</div><h3>Planificador de objetivos</h3><p class="desc">Define tus objetivos y realiza seguimiento de tus avances.</p></div>
+        <div class="content-card"><div class="card-icon">🔄</div><h3>Control de hábitos</h3><p class="desc">Registra tus hábitos y observa tu constancia.</p></div>
+        <div class="content-card"><div class="card-icon">💰</div><h3>Control de finanzas</h3><p class="desc">Organiza tus ingresos, gastos y planificación financiera personal.</p></div>
+        <div class="content-card"><div class="card-icon">📊</div><h3>Seguimiento</h3><p class="desc">Mantén una visión general de tus avances y prioridades.</p></div>
+        <div class="content-card"><div class="card-icon">📝</div><h3>Planificación personal</h3><p class="desc">Centraliza diferentes aspectos de tu organización personal.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">¿POR QUÉ UTILIZAR EL KIT?</span>
+        <h2>Beneficios</h2>
+      </div>
+      <div class="trust-grid" style="grid-template-columns:repeat(4,1fr);">
+        <div class="trust-card"><div class="ic">📋</div><h4>Más organización</h4><p>Ten tus actividades y planes mejor estructurados.</p></div>
+        <div class="trust-card"><div class="ic">🎯</div><h4>Mayor claridad</h4><p>Visualiza mejor tus objetivos y prioridades.</p></div>
+        <div class="trust-card"><div class="ic">📅</div><h4>Planificación sencilla</h4><p>Organiza tu día a día de manera práctica.</p></div>
+        <div class="trust-card"><div class="ic">💰</div><h4>Mejor control</h4><p>Lleva un seguimiento de tus finanzas personales.</p></div>
+        <div class="trust-card"><div class="ic">🔄</div><h4>Seguimiento</h4><p>Observa tus avances y mantén tus objetivos presentes.</p></div>
+        <div class="trust-card"><div class="ic">📂</div><h4>Todo en un solo lugar</h4><p>Centraliza diferentes áreas de tu organización.</p></div>
+        <div class="trust-card"><div class="ic">⚡</div><h4>Fácil de utilizar</h4><p>Diseñado para ser práctico y sencillo.</p></div>
+        <div class="trust-card"><div class="ic">📱</div><h4>Para tu día a día</h4><p>Una herramienta pensada para utilizarla de manera recurrente.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIEN ES -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">¿PARA QUIÉN ES?</span>
+        <h2>¿Para quién es el kit?</h2>
+      </div>
+      <div class="grid-products" style="grid-template-columns:repeat(3,1fr);">
+        <div class="card"><div class="card-icon">👨‍🎓</div><h3>Estudiantes</h3><p class="desc">Para organizar actividades, tareas, objetivos y hábitos.</p></div>
+        <div class="card"><div class="card-icon">💼</div><h3>Emprendedores</h3><p class="desc">Para tener mayor organización de sus actividades y objetivos.</p></div>
+        <div class="card"><div class="card-icon">🧑‍💻</div><h3>Freelancers</h3><p class="desc">Para organizar proyectos, tareas y planificación personal.</p></div>
+        <div class="card"><div class="card-icon">🎯</div><h3>Personas con metas</h3><p class="desc">Para llevar seguimiento de sus objetivos.</p></div>
+        <div class="card"><div class="card-icon">💰</div><h3>Quienes organizan sus finanzas</h3><p class="desc">Una herramienta de apoyo para registrar y controlar sus finanzas personales.</p></div>
+        <div class="card"><div class="card-icon">📅</div><h3>Personas más organizadas</h3><p class="desc">Para quienes buscan estructurar mejor su día a día.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALOR -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head" style="max-width:640px;">
+        <span class="eyebrow">VALOR</span>
+        <h2>Una sola herramienta para varias áreas de tu vida</h2>
+        <p>En lugar de tener tu planificación repartida en diferentes lugares, reúne diferentes áreas de tu organización personal dentro de un mismo kit.</p>
+      </div>
+      <div class="value-row">
+        <span class="value-pill">📅 Actividades</span>
+        <span class="value-pill">🎯 Objetivos</span>
+        <span class="value-pill">🔄 Hábitos</span>
+        <span class="value-pill">💰 Finanzas</span>
+        <span class="value-pill">📊 Seguimiento</span>
+        <span class="value-pill">📝 Planificación</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIO -->
+  <section id="comprar" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head" style="text-align:center; margin:0 auto 30px;">
+        <span class="eyebrow">PRECIO</span>
+        <h2>Empieza a organizarte hoy</h2>
+      </div>
+      <div class="price-mega">
+        <div class="price-compare" style="justify-content:center;"><span class="now">S/10</span><span class="old">S/50</span></div>
+        <ul class="bullet-list">
+          <li>Pago único</li>
+          <li>Sin suscripción mensual</li>
+          <li>Producto digital</li>
+        </ul>
+        <a class="btn btn-primary wa-link" data-msg="kit" href="#" target="_blank" rel="noopener">🔥 Quiero mi kit por S/10</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPRA DESTACADA -->
+  <section style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="buy-card">
+        <span class="eyebrow" style="margin-bottom:14px;">COMPRA DESTACADA</span>
+        <h3>Accede al Kit Planifica tu Vida</h3>
+        <div class="price-compare" style="justify-content:center;"><span class="now">S/10</span><span class="old">S/50</span></div>
+        <ul class="bullet-list" style="max-width:340px; margin-left:auto; margin-right:auto;">
+          <li>Pago único</li>
+          <li>Sin suscripción mensual</li>
+          <li>Producto digital</li>
+          <li>Acceso al producto después de confirmar el pago</li>
+        </ul>
+        <a class="btn btn-primary wa-link" data-msg="kit" href="#" target="_blank" rel="noopener">Quiero acceder por S/10</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIOS DE PAGO -->
+  <section class="payments" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">PAGO</span>
+        <h2>Medios de pago</h2>
+        <p>Elige el método de pago que prefieras.</p>
+      </div>
+      <div class="pay-grid">
+        <div class="pay-card">
+          <div class="pay-head"><span class="pay-badge">BCP</span><span class="pay-sub">Ahorro Soles</span></div>
+          <div class="pay-row"><div><span class="lbl">Número de cuenta</span><span class="val">30506417070984</span></div><button class="copy-btn" data-copy="30506417070984">Copiar</button></div>
+          <div class="pay-row"><div><span class="lbl">CCI</span><span class="val">00230510641707098419</span></div><button class="copy-btn" data-copy="00230510641707098419">Copiar</button></div>
+        </div>
+        <div class="pay-card">
+          <div class="pay-head"><span class="pay-badge">Interbank</span><span class="pay-sub">Simple Soles</span></div>
+          <div class="pay-row"><div><span class="lbl">Número de cuenta</span><span class="val">898-3469085858</span></div><button class="copy-btn" data-copy="898-3469085858">Copiar</button></div>
+          <div class="pay-row"><div><span class="lbl">CCI</span><span class="val">003-898-013469085858-41</span></div><button class="copy-btn" data-copy="003-898-013469085858-41">Copiar</button></div>
+        </div>
+        <div class="pay-card">
+          <div class="pay-head"><span class="pay-badge">Interbank USD</span><span class="pay-sub">Simple Dólares</span></div>
+          <div class="pay-row"><div><span class="lbl">Número</span><span class="val">898-3469085865</span></div><button class="copy-btn" data-copy="898-3469085865">Copiar</button></div>
+          <div class="pay-row"><div><span class="lbl">CCI</span><span class="val">003-898-013469085865-46</span></div><button class="copy-btn" data-copy="003-898-013469085865-46">Copiar</button></div>
+        </div>
+        <div class="pay-card">
+          <div class="pay-head"><span class="pay-badge" style="color:#9d6bff;">Yape</span></div>
+          <div class="pay-row"><div><span class="lbl">Número</span><span class="val">987 731 068</span></div><button class="copy-btn" data-copy="987731068">Copiar</button></div>
+        </div>
+        <div class="pay-card">
+          <div class="pay-head"><span class="pay-badge" style="color:#25d366;">Plin</span></div>
+          <div class="pay-row"><div><span class="lbl">Número</span><span class="val">987 731 068</span></div><button class="copy-btn" data-copy="987731068">Copiar</button></div>
+        </div>
+      </div>
+
+      <div class="confirm-pay">
+        <h3>Confirma tu pago</h3>
+        <p>Una vez realizado el pago, envía tu comprobante por WhatsApp para confirmar tu acceso.</p>
+        <a class="btn btn-primary wa-link" data-msg="kit-comprobante" href="#" target="_blank" rel="noopener">📲 Escribir ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section class="steps" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">PROCESO</span>
+        <h2>¿Cómo funciona?</h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step"><div class="step-num">01</div><h4>Elige tu kit</h4><p>Accede al Kit Planifica Tu Vida por solo S/10.</p></div>
+        <div class="step"><div class="step-num">02</div><h4>Realiza el pago</h4><p>Elige cualquiera de los medios de pago disponibles.</p></div>
+        <div class="step"><div class="step-num">03</div><h4>Envía tu comprobante</h4><p>Envía el comprobante mediante WhatsApp.</p></div>
+        <div class="step"><div class="step-num">04</div><h4>Recibe tu acceso</h4><p>Después de confirmar el pago, recibirás tu producto digital.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" style="padding:70px 0 10px;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">FAQ</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">¿Cuánto cuesta el Kit Planifica Tu Vida?<span class="plus"></span></button>
+          <div class="faq-a"><p>El precio actual es S/10.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Es una suscripción?<span class="plus"></span></button>
+          <div class="faq-a"><p>No. Es un pago único.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Qué incluye el kit?<span class="plus"></span></button>
+          <div class="faq-a"><p>Incluye herramientas y plantillas digitales orientadas a la planificación de actividades, objetivos, hábitos y finanzas.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Puedo utilizarlo para organizar mis finanzas?<span class="plus"></span></button>
+          <div class="faq-a"><p>Sí, el kit incluye herramientas para ayudarte a llevar un mejor control y seguimiento de tus finanzas personales. No es una asesoría financiera ni garantiza resultados económicos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Cómo recibo el producto?<span class="plus"></span></button>
+          <div class="faq-a"><p>Después de realizar el pago y enviar el comprobante por WhatsApp, se confirma el acceso al producto digital.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Puedo verlo antes de comprar?<span class="plus"></span></button>
+          <div class="faq-a"><p>Sí. La página incluye un video demostrativo del producto. <a href="https://drive.google.com/file/d/1OtOqV2zX1KQxwIdk_AZvzNFF3sp5jAI4/view?usp=drivesdk" target="_blank" rel="noopener" style="color:var(--blue); font-weight:700;">▶ Ver demostración</a></p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">¿Necesito pagar mensualmente?<span class="plus"></span></button>
+          <div class="faq-a"><p>No. Es un pago único.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" style="padding:20px 0 90px;">
+    <div class="wrap">
+      <div class="cta-box">
+        <h2>Empieza a organizar tu vida hoy</h2>
+        <p>Tus actividades, metas, hábitos y finanzas pueden estar mejor organizados. Empieza con una herramienta sencilla y práctica.</p>
+        <div class="price-compare" style="justify-content:center; margin-bottom:20px;"><span class="now">S/10</span><span class="old">S/50</span></div>
+        <a class="btn btn-primary wa-link" data-msg="kit" href="#" target="_blank" rel="noopener">🔥 Quiero mi kit por S/10</a>
+        <p class="note" style="margin-top:16px;">Pago único · Producto digital</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap foot-grid">
     <div class="foot-brand">
-      <div class="brand"><span class="brand-mark">M</span>Mundo Digital</div>
+      <div class="brand"><img class="brand-logo" src="assets/logo-mark.svg" alt="Mundo Digital Perú"><span>Mundo Digital <small class="brand-country">PERÚ</small></span></div>
       <p>Productos digitales con entrega inmediata.<br>Lima, Perú.</p>
     </div>
     <div class="foot-links">
@@ -1518,11 +2313,12 @@
       </div>
     </div>
   </div>
-  <div class="wrap foot-bottom">© 2026 Mundo Digital. Todos los derechos reservados.</div>
+  <div class="wrap foot-bottom">© 2026 Mundo Digital Perú. Todos los derechos reservados.</div>
+  <div class="wrap" style="margin-top:18px;font-size:11.5px;color:var(--text-2);line-height:1.6;">Antes de comprar, revisa la ficha del producto. La disponibilidad, formato y condiciones de acceso pueden variar según el recurso. Las marcas de terceros pertenecen a sus respectivos titulares.</div>
 </footer>
 
 <!-- ================= FLOATING WHATSAPP ================= -->
-<a class="float-wa wa-link" data-msg="default" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+<a class="float-wa wa-link" id="floatWa" data-msg="default" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
   <svg viewBox="0 0 24 24" fill="#062611"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.09c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.11.11-1.8-.11-.41-.13-.95-.31-1.63-.6-2.87-1.24-4.74-4.13-4.89-4.32-.14-.19-1.17-1.56-1.17-2.98s.73-2.11 1-2.4c.24-.27.55-.35.73-.35h.5c.16 0 .37-.03.58.44.24.55.79 1.9.86 2.04.07.14.11.3.02.49-.09.19-.14.3-.28.46-.14.16-.29.36-.42.48-.14.13-.29.28-.13.55.17.28.75 1.24 1.61 2.01 1.1.99 2.03 1.3 2.31 1.44.28.14.44.12.61-.07.16-.19.7-.81.89-1.09.19-.28.37-.23.62-.14.26.09 1.6.76 1.88.9.27.14.46.2.52.32.07.12.07.66-.17 1.35z"/></svg>
 </a>
 
@@ -1542,7 +2338,10 @@
     redes: "Hola Willy, quiero cotizar seguidores, likes o views para mis redes sociales.",
     "redes-paquete": "Hola Willy, quiero armar un paquete personalizado de seguidores, likes o views para mis redes.",
     ingles: "Hola Willy, quiero acceder al Pack de Inglés por S/7.",
-    "ingles-comprobante": "Hola Willy, ya realicé el pago del Pack de Inglés por S/7. Te envío mi comprobante."
+    "ingles-comprobante": "Hola Willy, ya realicé el pago del Pack de Inglés por S/7. Te envío mi comprobante.",
+    megapack: "Hola, quiero el Mega Pack Digital 2026",
+    kit: "Hola, quiero el KIT PLANIFICA TU VIDA por S/10",
+    "kit-comprobante": "Hola, acabo de realizar el pago del KIT PLANIFICA TU VIDA. Adjunto mi comprobante para confirmar mi acceso"
   };
   function waUrl(key){
     return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(MSG[key] || MSG.default);
@@ -1705,49 +2504,87 @@
   // ---- Routing: main store view vs. product detail views ----
   var mainView = document.getElementById("mainView");
   var detailViews = {
-    "producto/importadores-lima": {el: document.getElementById("detailView-importadores"), title: "Importadores de Lima | Mundo Digital"},
-    "producto/redes-sociales": {el: document.getElementById("detailView-redes"), title: "Redes sociales | Mundo Digital"},
-    "producto/libros-ingles": {el: document.getElementById("detailView-libros"), title: "Pack de Inglés | Mundo Digital"}
+    "producto/importadores-lima": {el: document.getElementById("detailView-importadores"), title: "Importadores de Lima | Mundo Digital", waMsg: "importadores"},
+    "producto/redes-sociales": {el: document.getElementById("detailView-redes"), title: "Redes sociales | Mundo Digital", waMsg: "redes"},
+    "producto/libros-ingles": {el: document.getElementById("detailView-libros"), title: "Pack de Inglés | Mundo Digital", waMsg: "ingles"},
+    "producto/mega-pack-digital": {el: document.getElementById("detailView-megapack"), title: "Mega Pack Digital 2026 | Mundo Digital", waMsg: "megapack"},
+    "producto/kit-planifica-tu-vida": {el: document.getElementById("detailView-kit"), title: "Kit Planifica tu Vida | Mundo Digital", waMsg: "kit"}
   };
 
   function hideAllDetails(){
     Object.keys(detailViews).forEach(function(k){ detailViews[k].el.style.display = "none"; });
   }
+  var floatWa = document.getElementById("floatWa");
+  function setFloatMsg(key){
+    if(floatWa){
+      floatWa.setAttribute("data-msg", key);
+      floatWa.href = waUrl(key);
+    }
+  }
   function showMain(){
     hideAllDetails();
     mainView.style.display = "";
     document.title = "Mundo Digital | Productos digitales";
+    setFloatMsg("default");
   }
   function showDetail(key){
     mainView.style.display = "none";
     hideAllDetails();
     detailViews[key].el.style.display = "";
     document.title = detailViews[key].title;
+    setFloatMsg(detailViews[key].waMsg || "default");
     window.scrollTo(0,0);
   }
   window.goToImportadores = function(){ location.hash = "producto/importadores-lima"; };
   window.goToRedes = function(){ location.hash = "producto/redes-sociales"; };
   window.goToLibros = function(){ location.hash = "producto/libros-ingles"; };
+  window.goToMegapack = function(){ location.hash = "producto/mega-pack-digital"; };
+  window.goToKit = function(){ location.hash = "producto/kit-planifica-tu-vida"; };
   window.goHome = function(){ location.hash = "inicio"; };
 
+  function currentActiveContainer(){
+    if(mainView.style.display !== "none") return mainView;
+    for(var k in detailViews){ if(detailViews[k].el.style.display !== "none") return detailViews[k].el; }
+    return mainView;
+  }
   function route(skipScroll){
     var h = decodeURIComponent(location.hash.replace("#",""));
     if(detailViews[h]){
       showDetail(h);
-    } else {
-      var wasDetail = mainView.style.display === "none";
-      showMain();
-      if(h && !skipScroll){
-        setTimeout(function(){
-          var el = document.getElementById(h);
-          if(el) el.scrollIntoView({behavior: wasDetail ? "auto" : "smooth"});
-        }, wasDetail ? 0 : 10);
-      } else if(!h){
-        window.scrollTo(0,0);
+      return;
+    }
+    if(h){
+      var sameViewEl = document.getElementById(h);
+      if(sameViewEl && currentActiveContainer().contains(sameViewEl)){
+        setTimeout(function(){ sameViewEl.scrollIntoView({behavior:"smooth"}); }, 10);
+        return;
       }
+    }
+    var wasDetail = mainView.style.display === "none";
+    showMain();
+    if(h && !skipScroll){
+      setTimeout(function(){
+        var el = document.getElementById(h);
+        if(el) el.scrollIntoView({behavior: wasDetail ? "auto" : "smooth"});
+      }, wasDetail ? 0 : 10);
+    } else if(!h){
+      window.scrollTo(0,0);
     }
   }
   window.addEventListener("hashchange", function(){ route(false); });
+
+  // Eventos listos para conectar con Google Analytics / Tag Manager en el futuro.
+  window.dataLayer = window.dataLayer || [];
+  function trackEvent(name, params){
+    try { window.dataLayer.push(Object.assign({event:name}, params || {})); } catch(e) {}
+  }
+  document.addEventListener('click', function(e){
+    var wa = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if(wa){ trackEvent('whatsapp_click', {page_title: document.title, path: location.hash || '#inicio'}); }
+    var productBtn = e.target.closest && e.target.closest('#productGrid button');
+    if(productBtn){ trackEvent('product_detail_click', {label:(productBtn.closest('.card')?.querySelector('h3')?.textContent || '').trim()}); }
+  });
+
   route(true);
 })();
 </script>
