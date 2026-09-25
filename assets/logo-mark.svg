@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Mundo Digital Perú">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4d8bff"/><stop offset="1" stop-color="#244ba8"/></linearGradient></defs>
+<rect x="4" y="4" width="56" height="56" rx="15" fill="#0f1728" stroke="#2d59c6" stroke-width="2"/>
+<path d="M14 19h9l9 12 9-12h9v25h-8V31l-10 13-10-13v13h-8z" fill="url(#g)"/>
+<path d="M17 48c7-3 13-3 15 0 2-3 8-3 15 0" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M45 14h8" stroke="#ef3340" stroke-width="3" stroke-linecap="round"/>
+</svg>
